@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="/logos/Logo.jpg" alt="logo" class="header_logo_img">
+        </div>
+        <br>
+        <div>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__menu__li"><a href="/index.html">Home</a></li>
+                    <li class="header__menu__li"><a href="./productos.html">Productos</a>
+                        <ul class="header__menu__sub">
+                            <li><a href="">producto1</a></li>
+                            <li><a href="">producto2</a></li>
+                            <li><a href="">producto3</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu__li"><a href="./rutinas.html">Rutinas</a>
+                        <ul class="header__menu__sub">
+                            <li><a href="">Rutina1</a></li>
+                            <li><a href="">Rutina2</a></li>
+                            <li><a href="">Rutina3</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu__li"><a href="./resultados.html">Resultados</a></li>
+                    <li class="header__menu__li"><a href="./contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <div class="header__botones">
+            <!-- user y carrito -->
+            <input type="image" value="user" src="/logos/user.png" alt="user" class="header__botones__bt">
+            <input type="image" value="carrito" src="/logos/carrito-de-compras.png" alt="carrito"
+                class="header__botones__bt">
+        </div>
+    </header>
+    <main class="contactos">
+        <div class="contactos__tit">
+            <h4>CONTACTANOS</h4>
+        </div>
+        <div class="contactos__ct">
+        <iframe class="contactos__ct__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18574.337420484513!2d-58.41234585724665!3d-34.616550471312785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652225062674!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contactos__ct__form">
+            <form action="">
+                <div>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Ingrese su email">
+                </div>
+                <div>
+                    <select name="comentarios" id="comentarios" aria-placeholder="Tipo de comentarios">
+                        <option value="01">Reclamo</option>
+                        <option value="02">Mensaje</option>
+                        <option value="03">Pregunta</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <section class="link">
+        <div class="link__redes">
+            <img src="/logos/whatsapp.png" alt="whatsapp.logo" class="link__redes__log">
+            <p>Contactate con nosotros
+                <a href="https://www.whatsapp.com/" target="black">Haz click para chatear</a> </p>
+        </div>
+        <div class="link__redes">
+            <img src="/logos/instagram.png" alt="instagram_logo" class="link__redes__log">
+            <a href="https://www.instagram.com/" target="black">Seguinos en Instagram</a>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <section class="footer__a">
+
+            <div class="footer__a__logo">
+                <img class="footer__a__logo__h" src="/logos/Logo.jpg">
+                <div>
+                    <h4>Seguinos en nuestras redes</h4>
+                </div>
+                <div class="footer__a__logo__img">
+                    <img src="/logos/facebook.logo2.png" alt="fb.lg" width="20px">
+                    <img src="/logos/instagram.logo2.png" alt="ig.lg" width="20px">
+                    <img src="/logos/twitter.png" alt="tw.lg" width="20px">
+                    <img src="/logos/linkedin.png" alt="lkin.lg" width="20px">
+                </div>
+            </div>
+
+            <div class="footer__a__menu">
+                <nav>
+                    <ul class="footer__a__menu__ul">
+                        <li><a href="/index.html" class="footer__menu__ul__a">Home</a></li>
+                        <li><a href="./productos.html" class="footer__menu__ul__a">Productos</a></li>
+                        <li><a href="./rutinas.html" class="footer__menu__ul__a">Rutinas</a></li>
+                        <li><a href="./resultados.html" class="footer__menu__ul__a">Resultados</a></li>
+                        <li><a href="./contactos.html" class="footer__menu__ul__a">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__a__contactos">
+
+                <h5 class="footer__a__contactos__h">Contactos</h5>
+                <ul class="footer__a__contactos__list">
+                    <li><img src="/logos/whatsapp.lg.png" alt="whatsapp.logo"
+                            class="footer__a__contactos__log__img">+1136525258</li>
+                    <li><img src="/logos/mail.png" alt="mail.logo"
+                            class="footer__a__contactos__log__img">Athletic@gmail.com</li>
+                    <li><img src="/logos/ubi.png" alt="ubi.logo" class="footer__a__contactos__log__img">Buenos
+                        Aires,
+                        Argentina</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="footer__b">
+
+            <div class="footer__b__aceptamos">
+                <div>
+                    <h6 class="footer__b__aceptamos__h">Aceptamos</h6>
+                </div>
+
+            </div>
+            <div class="footer__b__log">
+                <img src="/logos/american-express.png" alt="am_exp.crd" class="footer__b__log__img">
+                <img src="/logos/visa.png" alt="vs.crd" class="footer__b__log__img">
+                <img src="/logos/maestro.png" alt="mst.crd" class="footer__b__log__img">
+            </div>
+
+
+            <div class="footer__b__end">
+                <h6>Copyright © 2022 Athletic. All rights reserved. </h6>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
