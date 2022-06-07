@@ -2,32 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Water Brush', cursive;
+    font-family: "Montserrat", sans-serif
 }
 
 #container {
     display: grid;
-    gap: 1.6em;
     grid-template-columns: repeat(5, 1fr);
 }
 
 /* header */
-.header {
-    background-color: white;
-    color: black;
-    margin-block-start: auto;
-    width: auto;
-    height: 120px;
+
+.container {
     position: sticky;
-    line-height: 0;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-column: 1/6;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
-.header__logo {
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .header__logo {
     font-size: 20px;
     padding: 30px;
     margin: 0 0 0 50px;
@@ -70,7 +68,7 @@
 
 .header__botones__bt {
     width: 40px;
-}
+} */
 
 /* centro */
 .main {
@@ -80,9 +78,10 @@
 }
 
 .main__banner {
-    color: white;
-    height: 200px;
-    text-align: center;
+    position: relative;
+    background: url();
+    background-size: cover;
+    background-position: center;
 }
 
 .main__img {
@@ -159,8 +158,8 @@
 }
 
 .main__img2 {
-    padding-left: 100px;
-    display: grid;
+/*     padding-left: 100px; */
+/*     display: grid; */
 }
 
 .main__img2__prod {
@@ -170,29 +169,48 @@
 
 
 .main__img2__table {
-    grid-column: 2/3;
+/*     grid-column: 2/3;
     line-height: 60px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    font-size: 20px;
-    margin-right: 100px;
-    background-color: white;
-    padding: 0 100px 0 100px;
-    display: flex;
+    font-size: 20px; */
+/*     margin-right: 100px; */
+/*     background-color: white; */
+/*     padding: 0 100px 0 100px; */
+/*     display: flex;
     align-content: center;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center
+*/
+    width: 100%;
+    max-width: 1000px;
+    margin: auto
 }
 
-.main__img2__table__h2 {
-    font-size: 50px;
+.main__img2__table__tb{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
 }
 
-.main__img2__table__tr {
-    display: flex;
-    align-content: space-around;
-    height: 50px;
-    vertical-align: bottom;
+.main__img2__table__tb caption {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px, 0;
+}
+
+.main__img2__table__tb th td {
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.main__img2__table__tb thead {
+    text-transform: uppercase;
 }
 
 /* redes */
@@ -363,10 +381,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main__banner {
-        display: none;
-    }
-
     .main__img {
         margin: 0;
         display: flex;
@@ -418,6 +432,7 @@
     align-items: center;
     text-align: center;
     margin: 50px 0 0 50px;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
