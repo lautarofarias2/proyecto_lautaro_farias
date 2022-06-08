@@ -13,11 +13,7 @@
 /* header */
 
 .container {
-    position: sticky;
-    top: 0;
-    width: auto;
-    margin: 0;
-    padding: 0;
+    z-index: auto;
 }
 
 .collapse {
@@ -84,6 +80,11 @@
     background-position: center;
 }
 
+.main__banner img{
+    width: -webkit-fill-available;
+    height: min-content;
+}
+
 .main__img {
 /*     margin: 200px;
     padding-left: 30px;
@@ -95,7 +96,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .main__img__dv {
