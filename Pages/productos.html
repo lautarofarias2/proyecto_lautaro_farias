@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="/CSS/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -17,7 +20,7 @@
         <div class="container-fluid">
             <nav class="navbar sticky-top navbar-expand-lg">
                 <div class="container-fluid">
-                    <img src="/logos/Logo.jpg" alt="logo" width="200px">
+                    <img src="/logos/Logo.jpg" alt="logo" width="100px">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -27,36 +30,14 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="productos.html"
-                                    id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">
                                     Productos
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="rutinas.html"
-                                    id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                            <li class="nav-item">
+                                <a class="nav-link" href="rutinas.html">
                                     Rutinas
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="resultados.html">Resultados</a>
                             </li>
@@ -69,54 +50,60 @@
             </nav>
         </div>
     </header>
-    <section>
-        <h2>Productos</h2>
-        <div>
-            <select name="orden" id="orden">
-                <option value="01">Más vendidos</option>
-                <option value="01">Precio, menor a mayor</option>
-                <option value="01">Precio, mayor a menor</option>
-            </select>
-        </div>
-    </section>
 
     <main class="prod">
-        <div>
-            <a href=""><img src="" alt="prod1"></a>
+        <section>
+            <div class="prod__dv">
+                <h2>Productos</h2>
+            </div>
+            <div class="prod__dv2">
+                <select name="orden" id="orden">
+                    <option value="01">Más vendidos</option>
+                    <option value="01">Precio, menor a mayor</option>
+                    <option value="01">Precio, mayor a menor</option>
+                </select>
+            </div>
+        </section>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod2"></a>
+        <section class="prod__sp">
+            <div>
+                <div>
+                    <a href=""><img src="/img de productos/suple 2.jpg" alt="prod1"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/img de productos/suple 2.jpg" alt="prod2"></a>
+                </div>
+                <div>
+                    <a href=""><img src="/img de productos/suple 2.jpg" alt="prod3"></a>
+                </div>
+            </div>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod3"></a>
+            <div></div>
+            <div>
+                <a href=""><img src="/img de productos/suple 2.jpg" alt="prod4"></a>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod4"></a>
+            </div>
+            <div>
+                <a href=""><img src="/img de productos/suple 2.jpg" alt="prod5"></a>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod5"></a>
+            </div>
+            <div>
+                <a href=""><img src="/img de productos/suple 2.jpg" alt="prod6"></a>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod6"></a>
+            </div>
+            <div>
+                <a href=""><img src="/img de productos/suple 2.jpg" alt="prod7"></a>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod7"></a>
+            </div>
+            <div>
+                <a href=""><img src="/img de productos/suple 2.jpg" alt="prod8"></a>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod8"></a>
+            </div>
+            <div>
+                <a href=""><img src="/img de productos/suple 2.jpg" alt="prod9"></a>
 
-        </div>
-        <div>
-            <a href=""><img src="" alt="prod9"></a>
-
-        </div>
+            </div>
+        </section>
     </main>
 
 
@@ -182,7 +169,7 @@
         <section class="footer__b">
 
             <div class="footer__b__aceptamos">
-                <div >
+                <div>
                     <h6 class="footer__b__aceptamos__h">Aceptamos</h6>
                 </div>
 
