@@ -1,13 +1,9 @@
 /* pagina contactos */
 .contactos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    display: flex;
 
     .contactos__tit {
-        grid-column: 1/6;
         text-align: center;
-        font-size: 40px;
     }
 
     .contactos__ct {
@@ -32,21 +28,75 @@
 
 
 /* pagina productos */
-.prod {
+.prod__dv {
+    padding-top: 20px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+
     .prod__dv {
-        padding-top: 20px;
-        height: 100px;
-        text-align: center;
-        font-size: 40px;
-    }
+        h1 {
+            display: inline-block;
+            position: relative;
 
-    .prod__dv2 {
-        direction: rtl;
-        padding: 0 10px 10px;
-    }
 
-    .prod__sp {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+            h1::after,
+            ::before {
+                content: '';
+                position: absolute;
+                width: 120px;
+                height: 3px;
+                background-color: black;
+                top: 0.6em;
+            }
+
+
+            h1::before {
+                left: -140px;
+            }
+
+
+            h1::after {
+                right: -140px;
+            }
+
+        }
     }
 }
+
+.prod__dv2 {
+    direction: rtl;
+    padding: 0 10px 10px;
+}
+
+.prod__sp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .prod__sp__dv {
+        margin: 20px;
+
+        div {
+            background-color: #f4f4f4;
+        }
+    }
+}
+
+/* pagina de rutinas */
+
+.prod__sp__dv {
+    height: 80vh;
+    background-color: #3333;
+}
+
+/* pagina resultados */
+
+h1 {
+    text-align: center;
+}
+
+.res {
+    width: 100vh
+}
+
