@@ -1,0 +1,102 @@
+/* pagina contactos */
+.contactos {
+    display: flex;
+
+    .contactos__tit {
+        text-align: center;
+    }
+
+    .contactos__ct {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 200px;
+
+        .contactos__ct__map {
+            margin: 30px 30px 30px 0;
+        }
+
+        .contactos__ct__form {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 50px 0 0 50px;
+            flex-direction: column;
+        }
+
+    }
+}
+
+
+/* pagina productos */
+.prod__dv {
+    padding-top: 20px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+
+    .prod__dv {
+        h1 {
+            display: inline-block;
+            position: relative;
+
+
+            h1::after,
+            ::before {
+                content: '';
+                position: absolute;
+                width: 120px;
+                height: 3px;
+                background-color: black;
+                top: 0.6em;
+            }
+
+
+            h1::before {
+                left: -140px;
+            }
+
+
+            h1::after {
+                right: -140px;
+            }
+
+        }
+    }
+}
+
+.prod__dv2 {
+    direction: rtl;
+    padding: 0 10px 10px;
+}
+
+.prod__sp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .prod__sp__dv {
+        margin: 20px;
+
+        div {
+            background-color: #f4f4f4;
+        }
+    }
+}
+
+/* pagina de rutinas */
+
+.prod__sp__dv {
+    height: 80vh;
+    background-color: #3333;
+}
+
+/* pagina resultados */
+
+h1 {
+    text-align: center;
+}
+
+.res {
+    width: 100vh
+}
+
