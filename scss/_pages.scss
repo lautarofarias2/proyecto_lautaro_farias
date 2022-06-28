@@ -1,3 +1,6 @@
+@import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap');
+
 /* pagina contactos */
 .contactos {
     display: flex;
@@ -27,50 +30,50 @@
 }
 
 
-/* pagina productos */
-.prod__dv {
+/* titulo de paginas */
+.title_h {
     padding-top: 20px;
     height: 100px;
     text-align: center;
     font-size: 40px;
 
-    .prod__dv {
-        h1 {
-            display: inline-block;
-            position: relative;
+    h1 {
+        display: inline-block;
+        position: relative;
+        font-size: $h4;
+        font-family: 'Paytone One', sans-serif;
+    }
+
+    h1::after,
+    ::before {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 3px;
+        background-color: black;
+        top: 0.6em;
+    }
 
 
-            h1::after,
-            ::before {
-                content: '';
-                position: absolute;
-                width: 120px;
-                height: 3px;
-                background-color: black;
-                top: 0.6em;
-            }
+    h1::before {
+        left: -140px;
+    }
 
 
-            h1::before {
-                left: -140px;
-            }
-
-
-            h1::after {
-                right: -140px;
-            }
-
-        }
+    h1::after {
+        right: -140px;
     }
 }
 
-.prod__dv2 {
+.title_slct {
     direction: rtl;
     padding: 0 10px 10px;
 }
 
+/* pagina de productos */
 .prod__sp {
-    width: 100%;
+    height: 120vh;
+    width: auto;
     display: flex;
     justify-content: center;
 
@@ -85,18 +88,7 @@
 
 /* pagina de rutinas */
 
-.prod__sp__dv {
-    height: 80vh;
-    background-color: #3333;
-}
-
 /* pagina resultados */
-
-h1 {
-    text-align: center;
-}
-
 .res {
     width: 100vh
 }
-

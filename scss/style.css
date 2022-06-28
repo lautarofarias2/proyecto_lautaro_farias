@@ -1,5 +1,8 @@
 /* variables */
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap");
 /* pagina contactos */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap");
 .contactos {
   display: flex;
 }
@@ -22,19 +25,21 @@
   flex-direction: column;
 }
 
-/* pagina productos */
-.prod__dv {
+/* titulo de paginas */
+.title_h {
   padding-top: 20px;
   height: 100px;
   text-align: center;
   font-size: 40px;
 }
-.prod__dv .prod__dv h1 {
+.title_h h1 {
   display: inline-block;
   position: relative;
+  font-size: 1.5em;
+  font-family: "Paytone One", sans-serif;
 }
-.prod__dv .prod__dv h1 h1::after,
-.prod__dv .prod__dv h1 ::before {
+.title_h h1::after,
+.title_h ::before {
   content: "";
   position: absolute;
   width: 120px;
@@ -42,20 +47,22 @@
   background-color: black;
   top: 0.6em;
 }
-.prod__dv .prod__dv h1 h1::before {
+.title_h h1::before {
   left: -140px;
 }
-.prod__dv .prod__dv h1 h1::after {
+.title_h h1::after {
   right: -140px;
 }
 
-.prod__dv2 {
+.title_slct {
   direction: rtl;
   padding: 0 10px 10px;
 }
 
+/* pagina de productos */
 .prod__sp {
-  width: 100%;
+  height: 120vh;
+  width: auto;
   display: flex;
   justify-content: center;
 }
@@ -67,16 +74,7 @@
 }
 
 /* pagina de rutinas */
-.prod__sp__dv {
-  height: 80vh;
-  background-color: rgba(51, 51, 51, 0.2);
-}
-
 /* pagina resultados */
-h1 {
-  text-align: center;
-}
-
 .res {
   width: 100vh;
 }
@@ -123,6 +121,7 @@ h1 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 .collapse {
@@ -155,8 +154,10 @@ h1 {
   text-align: center;
 }
 .main .main__img h2 {
-  font-size: 20px;
+  font-size: 1.5em;
   padding: 20px;
+  font-weight: bolder;
+  color: #333237;
 }
 .main .main__img a {
   text-decoration: none;
@@ -191,8 +192,13 @@ h1 {
   grid-column: 1/6;
   height: 300px;
 }
-.news .news__h3 {
-  font-size: 30px;
+.news .news__h h1 {
+  font-size: 3em;
+  font-weight: 900;
+}
+.news .news__h p {
+  margin: 50px;
+  font-size: 15px;
 }
 .news .news__check {
   margin-bottom: 50px;
@@ -233,9 +239,9 @@ h1 {
   list-style: none;
 }
 .footer .footer__dv .footer__dv__ul a {
-  color: black;
+  color: #4d4a4b;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 25px;
 }
 .footer .footer__dv .footer__dv__ul a:hover {
@@ -253,6 +259,10 @@ h1 {
 .footer .footer__dv2 img {
   width: 40px;
 }
+.footer .footer__dv2 h3 {
+  font-size: 1.5em;
+}
 .footer .footer__end {
+  font-size: 0.35em;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */

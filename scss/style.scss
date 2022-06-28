@@ -1,11 +1,13 @@
 @import 'vars';
 @import 'pages';
 @import 'responsive';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 .collapse {
@@ -38,8 +40,10 @@
         text-align: center;
 
         h2 {
-            font-size: 20px;
+            font-size: $h4;
             padding: 20px;
+            font-weight: bolder;
+            color: #333237;
         }
 
         a {
@@ -80,8 +84,16 @@
     grid-column: 1/6;
     height: 300px;
 
-    .news__h3 {
-        font-size: 30px;
+    .news__h {
+        h1 {
+            font-size: $h2;
+            font-weight: 900;
+        }
+
+        p {
+            margin: 50px;
+            font-size: 15px;
+        }
     }
 
     .news__check {
@@ -130,9 +142,9 @@
             }
 
             a {
-                color: black;
+                color: #4d4a4b;
                 text-decoration: none;
-                font-weight: bolder;
+                font-weight: 600;
                 font-size: 25px;
             }
 
@@ -155,10 +167,14 @@
         img {
             width: 40px;
         }
-        
+
+        h3 {
+            font-size: $h4;
+        }
     }
 
     .footer__end {
+        font-size: $h6;
         text-align: center;
     }
 }
