@@ -11,15 +11,11 @@
     <link rel="stylesheet" href="/scss/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
 </head>
 
 <body>
     <header>
         <!-- BOOTSTRAP -->
-        <div class="container-fluid">
             <nav class="navbar sticky-top navbar-expand-lg">
                 <div class="container-fluid">
                     <img src="/logos/Logo.jpg" alt="logo" width="100px">
@@ -50,14 +46,13 @@
                     </div>
                 </div>
             </nav>
-        </div>
     </header>
 
-    <main class="prod">
-        <div class="prod__dv">
+    <main class="title">
+        <div class="title_h">
             <h1>Productos</h1>
         </div>
-        <div class="prod__dv2">
+        <div class="title_slct">
             <select name="orden" id="orden">
                 <option value="01">Más vendidos</option>
                 <option value="01">Precio, menor a mayor</option>
@@ -67,7 +62,7 @@
 
         <section class="prod__sp">
             <div class="prod__sp__dv">
-                <div class="prod__sp__dv__dv">
+                <div>
                     <img src="/img de productos/suple 2.jpg" alt="prod1">
                     <p>Producto</p>
                     <p>Precio$</p>
@@ -124,20 +119,17 @@
 
 
     <section class="news">
-        <div class="news__h3">
+        <div class="news__h">
             <!-- ----------------- <h2> SUSCRIBITE AL NEWSLETTER</h2> ------------------ -->
-            <h3>SUSCRIBITE AL NEWSLETTER</h3>
-        </div>
-        <div class="news__check">
-            <label for="checkbox">Deseo recibir notificaciones</label>
-            <input type="checkbox">
+            <h1>SUSCRIBITE AL NEWSLETTER</h1>
+            <p>Entérate antes que nadie de los nuevos lanzamientos, productos exclusivos y promociones especiales que
+                tenemos para vos.</p>
         </div>
         <div class="news__email">
             <input type="email" id="email" placeholder="Ingrese su email" class="news__email__em">
-            <input type="submit" value="Enviar" class="news__email__submit">
+            <button type="submit" class="btn btn-outline-secondary">Enviar</button>
         </div>
     </section>
-
 
     <footer class="footer">
         <div class="footer__dv">
@@ -166,6 +158,10 @@
         </div>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

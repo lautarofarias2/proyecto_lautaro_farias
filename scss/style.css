@@ -1,40 +1,111 @@
 /* variables */
+/* variables */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap");
 /* pagina contactos */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap");
 .contactos {
+  background-color: #AA96DA;
   display: flex;
-}
-.contactos .contactos__tit {
-  text-align: center;
-}
-.contactos .contactos__ct {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 200px;
-}
-.contactos .contactos__ct .contactos__ct__map {
-  margin: 30px 30px 30px 0;
-}
-.contactos .contactos__ct .contactos__ct__form {
-  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.contactos .contactos__form {
+  background-color: rgba(57, 62, 70, 0.4901960784);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+.contactos .contactos__form h2 {
   text-align: center;
-  margin: 50px 0 0 50px;
-  flex-direction: column;
+  margin-bottom: 30px;
+}
+.contactos .contactos__form .contactos__form__btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  border: 0;
+  border-radius: 5px;
+}
+.contactos .contactos__form .contactos__form__btn:focus {
+  outline: 0;
+}
+.contactos .contactos__form .contactos__form__btn:active {
+  transform: scale(0.98);
+}
+.contactos .contactos__form .contactos__form__ct {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.contactos .contactos__form .contactos__form__ct input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+.contactos .contactos__form .contactos__form__ct input:focus,
+.contactos .contactos__form .contactos__form__ct input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.contactos .contactos__form .contactos__form__ct textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+.contactos .contactos__form .contactos__form__ct textarea:focus,
+.contactos .contactos__form .contactos__form__ct textarea:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.contactos .contactos__form .contactos__form__ct label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+.contactos .contactos__form .contactos__form__ct label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.contactos .contactos__form .contactos__form__ct input:focus + label span,
+.contactos .contactos__form .contactos__form__ct input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
 }
 
-/* pagina productos */
-.prod__dv {
+/* titulo de paginas */
+.title_h {
   padding-top: 20px;
   height: 100px;
   text-align: center;
   font-size: 40px;
 }
-.prod__dv .prod__dv h1 {
+.title_h h1 {
   display: inline-block;
   position: relative;
+  font-size: 1.5em;
+  font-family: "Paytone One", sans-serif;
 }
-.prod__dv .prod__dv h1 h1::after,
-.prod__dv .prod__dv h1 ::before {
+.title_h h1::after,
+.title_h ::before {
   content: "";
   position: absolute;
   width: 120px;
@@ -42,20 +113,22 @@
   background-color: black;
   top: 0.6em;
 }
-.prod__dv .prod__dv h1 h1::before {
+.title_h h1::before {
   left: -140px;
 }
-.prod__dv .prod__dv h1 h1::after {
+.title_h h1::after {
   right: -140px;
 }
 
-.prod__dv2 {
+.title_slct {
   direction: rtl;
   padding: 0 10px 10px;
 }
 
+/* pagina de productos */
 .prod__sp {
-  width: 100%;
+  height: 120vh;
+  width: auto;
   display: flex;
   justify-content: center;
 }
@@ -67,16 +140,7 @@
 }
 
 /* pagina de rutinas */
-.prod__sp__dv {
-  height: 80vh;
-  background-color: rgba(51, 51, 51, 0.2);
-}
-
 /* pagina resultados */
-h1 {
-  text-align: center;
-}
-
 .res {
   width: 100vh;
 }
@@ -119,10 +183,18 @@ h1 {
     padding-left: 50px;
   }
 }
+/* mixin */
+/* map */
+/* extend */
+.bcground, .news {
+  background-color: #BBC7CE;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 .collapse {
@@ -132,7 +204,7 @@ h1 {
 
 .main {
   background: white;
-  color: black;
+  color: #110B11;
   grid-column: 1/6;
 }
 .main .main__banner {
@@ -155,35 +227,18 @@ h1 {
   text-align: center;
 }
 .main .main__img h2 {
-  font-size: 20px;
+  font-size: 1.5em;
   padding: 20px;
+  font-weight: bolder;
+  color: #333237;
 }
 .main .main__img a {
   text-decoration: none;
-  color: black;
-}
-
-.link {
-  background-color: grey;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  grid-column: 1/6;
-}
-.link .link__redes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.link .link__redes .link__redes__log {
-  width: 50px;
-  padding-right: 10px;
+  color: #110B11;
 }
 
 .news {
   color: #333333;
-  background-color: #F4F4F4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,8 +246,13 @@ h1 {
   grid-column: 1/6;
   height: 300px;
 }
-.news .news__h3 {
-  font-size: 30px;
+.news .news__h h1 {
+  font-size: 3em;
+  font-weight: 900;
+}
+.news .news__h p {
+  margin: 50px;
+  font-size: 15px;
 }
 .news .news__check {
   margin-bottom: 50px;
@@ -233,9 +293,9 @@ h1 {
   list-style: none;
 }
 .footer .footer__dv .footer__dv__ul a {
-  color: black;
+  color: #4d4a4b;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 25px;
 }
 .footer .footer__dv .footer__dv__ul a:hover {
@@ -253,6 +313,10 @@ h1 {
 .footer .footer__dv2 img {
   width: 40px;
 }
+.footer .footer__dv2 h3 {
+  font-size: 1.5em;
+}
 .footer .footer__end {
+  font-size: 0.35em;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
