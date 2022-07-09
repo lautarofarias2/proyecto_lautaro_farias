@@ -55,61 +55,51 @@
         </div>
     </header>
 
-    <main class="title">
+    <section class="title">
         <div class="title_h">
-            <h4>CONTACTANOS</h4>
+            <h1>Contactanos</h1>
         </div>
-        <section class="contactos">
-            <iframe class="contactos__map"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18574.337420484513!2d-58.41234585724665!3d-34.616550471312785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652225062674!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="contactos__form">
-                <h2>Envianos tu mensaje</h2>
-                <form>
-                    <div class="contactos__form__ct">
-                        <input type="text" required>
-                        <label>Tu Nombre</label>
-                    </div>
-                    <div class="contactos__form__ct">
-                        <input type="email" required>
-                        <label>Tu Email</label>
-                    </div>
-                    <div class="contactos__form__ct">
-                        <textarea placeholder="Mensaje"></textarea>
-                        <label></label>
-                    </div>
-                    <button class="contactos__form__btn">Enviar</button>
-                </form>
-                <script>
-                    const labels = document.querySelectorAll(".form-control label");
+    </section>
 
-                    labels.forEach((label) => {
-                        label.innerHTML = label.innerText
-                            .split("")
-                            .map(
-                            (letter, idx) =>
-                                `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
-                            )
-                            .join("");
-                    });
-                </script>
-            </div>
-        </section>
+    <section class="contactos">
+        <iframe class="contactos__map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18574.337420484513!2d-58.41234585724665!3d-34.616550471312785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652225062674!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contactos__form">
+            <h2>Envianos tu mensaje</h2>
+            <form>
+                <div class="contactos__form__ct">
+                    <input type="text" placeholder="Nombre" required>
+                    <label></label>
+                </div>
+                <div class="contactos__form__ct">
+                    <input type="email" placeholder="Email" required>
+                    <label></label>
+                </div>
+                <div class="contactos__form__ct">
+                    <textarea placeholder="Mensaje"></textarea>
+                    <label></label>
+                </div>
+                <button class="contactos__form__btn">Enviar</button>
+            </form>
+        </div>
+    </section>
     </main>
+
+    <!-- ----------------- <h2> SUSCRIBITE AL NEWSLETTER</h2> ------------------ -->
     <section class="news">
-        <div class="news__h3">
-            <!-- ----------------- <h2> SUSCRIBITE AL NEWSLETTER</h2> ------------------ -->
-            <h2>SUSCRIBITE AL NEWSLETTER</h2>
+        <div class="news__h">
+            <h1>SUSCRIBITE AL NEWSLETTER</h1>
+            <p>Entérate antes que nadie de los nuevos lanzamientos, productos exclusivos y promociones especiales que
+                tenemos para vos.</p>
         </div>
-        <div class="news__check">
-            <label for="checkbox">Deseo recibir notificaciones</label>
-            <input type="checkbox">
+        <div class="news_btn">
+            <input type="email" id="email" class="btn-outline-secondary" placeholder="Ingrese su email">
+            <button type="submit" class="btn">Enviar</button>
         </div>
-        <div class="news__email">
-            <input type="email" id="email" placeholder="Ingrese su email" class="news__email__em">
-            <input type="submit" value="Enviar" class="news__email__submit">
-        </div>
+    </section>
+
     </section>
 
     <footer class="footer">

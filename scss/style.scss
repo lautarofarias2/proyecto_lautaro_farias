@@ -2,7 +2,6 @@
 @import 'pages';
 @import 'responsive';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap&family=Staatliches&display=swapfamily=Rubik:wght@500&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Alfa+Slab+One&display=swapfamily=Paytone+One&display=swap');
-@import 'mixins';
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +12,18 @@
 .collapse {
     display: flex;
     justify-content: flex-end;
+
+    .nav-link{
+        font-weight: 600;
+        color: #4d4a4b;
+    }
+    .nav-link:hover{
+        color: #aaaaaa;
+    }
 }
 
 .main {
     background: white;
-    @include colortext;
-    grid-column: 1/6;
 
     .main__banner {
         position: relative;
@@ -40,7 +45,7 @@
         text-align: center;
 
         h2 {
-            font-size: $h4;
+            font-size: 25px;
             padding: 20px;
             font-weight: bolder;
             color: #333237;
@@ -48,7 +53,16 @@
 
         a {
             text-decoration: none;
-            @include colortext;
+        }
+
+        .btn {
+            color: #4d4a4b;
+            border-color: #4d4a4b;
+        }
+
+        .btn:hover{
+            background-color: #4d4a4b;
+            color: #f4f4f4;
         }
     }
 
@@ -56,18 +70,19 @@
 
 
 .news {
-    @extend .bcground;
-    color: #333333;
+    background-color: #f4f4f4;
+    color: #4d4a4b;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    grid-column: 1/6;
     height: 300px;
 
     .news__h {
+        text-align: center;
+
         h1 {
-            font-size: $h2;
+            font-size: 50px;
             font-weight: 900;
         }
 
@@ -77,29 +92,23 @@
         }
     }
 
-    .news__check {
-        margin-bottom: 50px;
-    }
-
-    .news__email {
-        display: flex;
+    .news_btn {
         padding-bottom: 30px;
 
-        .news__email__em {
-            border: #111DFF;
-            border-radius: 10px;
+        input {
+            height: 37px;
+            border-radius: 5px;
+            border: 1px #4d4a4b solid;
         }
 
-        .news__email__submit {
-            width: 50px;
-            border: 2px;
-            border-radius: 10px;
-            transition-duration: 0.4s;
+        .btn {
+            color: #4d4a4b;
+            border-color: #4d4a4b;
         }
 
-        .news__email__submit:hover {
-            background-color: grey;
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        .btn:hover{
+            background-color: #4d4a4b;
+            color: #f4f4f4;
         }
     }
 }
@@ -125,7 +134,7 @@
             a {
                 color: #4d4a4b;
                 text-decoration: none;
-                font-weight: 600;
+                font-weight: 900;
                 font-size: 25px;
             }
 
@@ -150,12 +159,14 @@
         }
 
         h3 {
-            font-size: $h4;
+            font-size: 20px;
+            font-weight: bold;
+
         }
     }
 
     .footer__end {
-        font-size: $h6;
+        font-size: 15px;
         text-align: center;
     }
 }
