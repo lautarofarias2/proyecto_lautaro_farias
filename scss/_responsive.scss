@@ -1,2 +1,28 @@
-@media (min-width: $tablet) {
+
+@media (max-width: $tablet) {
+    /* home */
+
+    .main__img {
+        flex-direction: column;
+
+        img {
+            width: 250px;
+            padding-top: 20px;
+        }
+    }
+
+    /* Productos */
+    .prod__sp {
+        flex-wrap: wrap
+    }
+
+    /* Rutinas */
+    .fo {
+        flex-wrap: wrap;
+    }
+
+    /* contactos */
+    .contactos__map {
+        display: none;
+    }
 }

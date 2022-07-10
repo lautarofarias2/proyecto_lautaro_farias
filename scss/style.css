@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
   overflow: hidden;
+  margin: 50px;
 }
 .contactos .contactos__form {
   background-color: #f4f4f4;
@@ -178,13 +178,18 @@
 /* pagina de rutinas */
 .fo {
   display: flex;
+  justify-content: center;
   margin: 60px 0 80px;
 }
 .fo .fo__dv {
   background: #f4f4f4;
-  width: 30rem;
+  width: 300px;
   margin: 30px;
   position: relative;
+}
+.fo .fo__dv img {
+  width: 300px;
+  height: auto;
 }
 .fo .fo__dv::after {
   position: absolute;
@@ -232,7 +237,7 @@
 /* pagina resultados */
 #container {
   max-width: 1101px;
-  margin: 0 7%;
+  margin: 7%;
 }
 #container .res {
   padding: 0;
@@ -271,6 +276,31 @@
   height: auto;
 }
 
+@media (max-width: 768px) {
+  /* home */
+  .main__img {
+    flex-direction: column;
+  }
+  .main__img img {
+    width: 250px;
+    padding-top: 20px;
+  }
+
+  /* Productos */
+  .prod__sp {
+    flex-wrap: wrap;
+  }
+
+  /* Rutinas */
+  .fo {
+    flex-wrap: wrap;
+  }
+
+  /* contactos */
+  .contactos__map {
+    display: none;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -306,11 +336,10 @@
 }
 .main .main__img {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
   text-align: center;
+  margin: 50px 0 50px;
 }
 .main .main__img h2 {
   font-size: 25px;
@@ -343,15 +372,16 @@
   text-align: center;
 }
 .news .news__h h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 900;
+  margin: 40px;
 }
 .news .news__h h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 900;
+  margin: 40px;
 }
 .news .news__h p {
-  margin: 50px;
   font-size: 15px;
 }
 .news .news_btn {
@@ -382,7 +412,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
 }
 .footer .footer__dv .footer__dv__ul li {
   list-style: none;
@@ -391,7 +421,6 @@
   color: #4d4a4b;
   text-decoration: none;
   font-weight: 900;
-  font-size: 25px;
 }
 .footer .footer__dv .footer__dv__ul a:hover {
   color: gray;
